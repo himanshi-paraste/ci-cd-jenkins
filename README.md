@@ -210,18 +210,9 @@ Addition Result:
 
 ## ✅ Troubleshooting Tips
 
-- 🔥 Port already in use? Run: `sudo docker ps -a` and `docker rm -f <container-id>`
-
-- 🔐 GitHub SSH error?
-      It’s better to use the HTTPS link of your GitHub repo instead of SSH.
-      Also, make sure you’ve added your GitHub username and token in Jenkins credentials.
-
-- 🚫 App not loading? 
-      Check these things:
-
-- Is port 5000 open in your EC2 security group?
-- Is your Docker container running?
-- Look at Jenkins or Docker logs to see if there’s any error.
+- 🔥 Port already in use? Run: sudo docker ps -a and docker rm -f <container-id>
+- 🔐 GitHub SSH error? Disable SSH in Jenkins Git config and use HTTPS with credentials
+- 🚫 App not loading? Check EC2 security group and Jenkins logs
 
 ---
 
