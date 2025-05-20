@@ -153,6 +153,7 @@ http://<EC2-IP>:8080
 
 📷 ![Jenkins page](screenshorts/pic2.png)
 
+
 2. Under **Source Code Management**:
    - Git repository: `https://github.com/<your-username>/<repo-name>.git`
    - Credentials: Select the GitHub credentials
