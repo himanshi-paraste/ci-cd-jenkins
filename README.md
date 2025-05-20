@@ -132,7 +132,7 @@ sudo systemctl status jenkins
 ```
 http://<EC2-IP>:8080
 
-📷 ![Jenkins page](screenshorts/pic1-jenkins-8080.png)
+📷 ![Jenkins page](screenshorts/pic1.png)
 
 ```
 
