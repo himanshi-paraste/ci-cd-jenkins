@@ -218,9 +218,9 @@ Addition Result:
 
 - 🚫 App not loading? 
       Check these things:
-       * Is port 5000 open in your EC2 security group?
-       * Is your Docker container running?
-       * Look at Jenkins or Docker logs to see if there’s any error.
+       - Is port 5000 open in your EC2 security group?
+       - Is your Docker container running?
+       - Look at Jenkins or Docker logs to see if there’s any error.
 
 ---
 
