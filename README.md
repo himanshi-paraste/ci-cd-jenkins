@@ -132,9 +132,9 @@ sudo systemctl status jenkins
 ```
 http://<EC2-IP>:8080
 
-📷 ![Jenkins page](screenshorts/pic1.png)
 
 ```
+📷 ![Jenkins page](screenshorts/pic1.png)
 
 4. Install recommended plugins and create an admin user.
 
@@ -150,11 +150,13 @@ http://<EC2-IP>:8080
 ## 📦 Step 6: Create Jenkins Freestyle Job
 
 1. New Item → Freestyle Project → `python-ci-cd`
+
 📷 ![Jenkins page](screenshorts/pic2.png)
 
 2. Under **Source Code Management**:
    - Git repository: `https://github.com/<your-username>/<repo-name>.git`
    - Credentials: Select the GitHub credentials
+
 📷 ![Jenkins page](screenshorts/pic3.png)
 
 3. Under **Build Triggers**:
