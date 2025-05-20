@@ -50,7 +50,8 @@ if __name__ == '__main__':
 2. Create `requirements.txt`:
 
 ```
-flask
+Flask==2.2.5
+
 ```
 
 3. Test locally (optional):
@@ -130,6 +131,9 @@ sudo systemctl status jenkins
 
 ```
 http://<EC2-IP>:8080
+
+📷 ![Jenkins page](screenshorts/pic1-jenkins-8080.png)
+
 ```
 
 4. Install recommended plugins and create an admin user.
@@ -146,9 +150,13 @@ http://<EC2-IP>:8080
 ## 📦 Step 6: Create Jenkins Freestyle Job
 
 1. New Item → Freestyle Project → `python-ci-cd`
+📷 ![Jenkins page](screenshorts/pic2.png)
+
 2. Under **Source Code Management**:
    - Git repository: `https://github.com/<your-username>/<repo-name>.git`
    - Credentials: Select the GitHub credentials
+📷 ![Jenkins page](screenshorts/pic3.png)
+
 3. Under **Build Triggers**:
    - Check: `GitHub hook trigger for GITScm polling`
 4. Under **Build Steps → Execute shell**:
@@ -192,18 +200,10 @@ You should see:
 Addition Result:
 5 + 7 = 12
 ```
+📷 ![Result page](screenshorts/pic4.png)
 
 ---
 
-## 🧪 Sample Output
-
-![Jenkins Console Output](screenshots/jenkins-output.png)
-> Jenkins build logs showing successful pipeline execution.
-
-![Browser Result](screenshots/browser-output.png)
-> Web app output on EC2 public IP.
-
----
 
 ## ✅ Troubleshooting Tips
 
